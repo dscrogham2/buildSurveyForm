@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build a Survey Form: freeCodeCamp</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor|Open+Sans:300i,400,700,700i|Work+Sans:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">24 Hour Gym</h1>
+    <div id="box">
+        <p id="description">
+            We are always looking to improve the experience for members at 24 Hour Gym. With your input, we are able to make decisions that benefit all of our members. We really appreciate your time and feedback for completing our questionnaire. This we only take a few minutes to complete and all reponses are confindential.</p>
+        <form id="survey-form" action="http://www.example.com/profile.php" method="GET">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="firstName-Label" for="name">First Name:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" size="30" maxlength="100" placeholder="Enter Your First Name" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="lastName-Label" for="name">Last Name:
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" size="30" maxlength="100" placeholder="Enter Your Last Name" required />
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">Email:</label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" size="30" maxlength="100" placeholder="Enter Your Email" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="timeYouAttend">What time do you normally attend our facility?</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="timeYouAttend" class="dropdown">
+                        <option disable value>Select an Option</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="night">Night</option>
+                        <option value="perferNo">Perfer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="physicalCondition">How would you describe your physical condition?</label>
+                </div>
+                <div class="rightTab">
+                    <ul>
+                        <li class="radio">
+                            <label>
+                                Fit and Active
+                                <input type="radio" name="radio-buttons" class="user-class" value="1" />
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Excerise Important, but not my life
+                                <input type="radio" name="radio-buttons" class="user-class" value="2" />
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Need to lose a few inches on the waist-line
+                                <input type="radio" name="radio-buttons" class="user-class" value="3" />
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                The couch is my friend
+                                <input type="radio" name="radio-buttons" class="user-class" value="4" />
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comeWith">Who do you come with?
+                    </label>
+                </div>
+                <div classs="rightTab">
+                    <div id="dropdown" name="comeWith">
+                        <select id="comeWith" name="comeWith" class="dropdown">
+                            <option disabled selected value>Select an Option</option>
+                            <option value="1">Alone</option>
+                            <option value="2">Friend</option>
+                            <option value="3">Family</option>
+                            <option value="4">All the above</option>
+                            <option value="0">Perfer not to say</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="whatYouSpend">
+                            What do you spend the majority of your time at the gym doing?
+                            <br>
+                            (Check all that apply):
+                        </label>
+                    </div>
+                    <div class="rightTab">
+                        <ul id="checkbox">
+                            <li class="checkbox">
+                                <label>
+                                    <input name="whatYouSpend" value="1" type="checkbox" class="userChoice">Machines
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="whatYouSpend" value="2" type="checkbox" class="userChoice">Cardio
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="whatYouSpend" value="3" type="checkbox" class="userChoice">Classes
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="whatYouSpend" value="4" type="checkbox" class="userChoice">Lifting
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="whatYouSpend" value="5" type="checkbox" class="userChoice">Swimming
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="physicalCondition">How often do you come to 24 Hour Gym?</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul>
+                            <li class="radio">
+                                <label>
+                                    When I can make it
+                                    <input type="radio" name="radio-buttons" class="user-class" value="1" />
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    1 - 2 per week
+                                    <input type="radio" name="radio-buttons" class="user-class" value="2" />
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    3 - 4 per week
+                                    <input type="radio" name="radio-buttons" class="user-class" value="3" />
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    5 or more per week
+                                    <input type="radio" name="radio-buttons" class="user-class" value="4" />
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="personalTrainer">Would be willing to use a personal trainer?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="timeYouAttend" class="dropdown">
+                            <option disable value>Select an Option</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                            <option value="3">Maybe</option>
+                            <option value="perferNo">Perfer not to say</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="comments">
+                            Any thing else you would like us to know?
+                        </label>
+                    </div>
+                    <div class="rightTab">
+                        <textarea id="comments" rows="4" cols="40" placeholder="Add comments..."></textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

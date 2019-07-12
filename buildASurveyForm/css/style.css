@@ -1,0 +1,139 @@
+html {
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+body {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background: #a9d7d1;
+    font-family: Open Sans, Work Sans, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+    text-align: center;
+}
+
+@media (max-width: 767px),
+(max-height: 440px) {
+    body {
+        min-width: 320px;
+        touch-action: manipulation;
+    }
+}
+
+h1 {
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#box {
+    display: block;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+
+}
+
+p {
+    font-family: Work Sans;
+    font-style: 300;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 520px) {
+    .rightTab {
+        width: 80%;
+        float: left;
+    }
+}
+
+#survey-form {
+    margin-top: 0;
+}
+
+label {
+    cursor: default;
+}
+
+.labels {
+    padding: 5px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.input-field {
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 520px) {
+    .input-field {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
